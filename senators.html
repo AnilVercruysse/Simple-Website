@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+
+<meta charset="UTF-8">
+<title>Members of the Senate</title>
+
+<link href="styles.css" rel="stylesheet">
+    
+</head>
+        
+    
+    
+<body>
+<!-- overall heading -->
+<h1>Members of the United States Senate</h1>
+ <!-- sub heading -->   
+<h2>Senate Membership by Party</h2>
+<!-- set up a div to contain html giving the total number of senators of each party affiliation in a table -->
+<div id="number_of_senators"> </div>
+<br>
+     <!-- sub heading -->   
+<h2>Senators with Leadership Roles</h2>
+<!-- set up a div to contain html code giving a list of senators with leadership roles in a list -->
+<div id = "leadership_roles"> </div>
+    
+ <!-- sub heading -->   
+<h2>Dynamic Table of Senators</h2>
+    
+<!-- Dropdown menu to filter by party, based on example from 
+https://stackoverflow.com/questions/3487263/how-to-use-onclick-or-onselect-on-option-tag-in-a-jsp-page#:~:text=Neither%20the%20onSelect()%20nor,%3E%20and%20tags.-->
+
+<span><label for="party">Show senators by party:</label>
+<select name="party" id="selectParty" onchange="filter()">
+
+</select></span>
+
+
+<!-- second dropdown list for states-->
+    <span><label for="state">Show senators by state:</label>
+  <select name ="state" id="selectState" onchange="filter()">
+   
+  </select></span>
+<!-- third dropdown list for seniority-->
+ <span><label for="seniority">Show senators by seniority:</label>
+  <select name="seniority" id="selectSeniority" onchange="filter()">
+
+</select></span>
+<br>
+<br>
+<br>
+
+    
+<!-- set up a div to contain html code giving a table of senators with key information -->
+    
+<div id = "sen_table"> </div>
+<script src="index.js"></script>
+
+</body>
+</html>
